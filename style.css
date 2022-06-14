@@ -1,0 +1,487 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Calibri;
+}
+
+
+/* 
+******************************************************************************************
+HEADER
+******************************************************************************************
+*/
+
+
+/* HEADER */
+
+#logo{
+    width: 100px;
+    background: none;
+    position: relative;
+}
+
+header{
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+}
+
+.link{
+    background: none;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 2%;
+    list-style: none;
+    transition: all 0.5s;
+}
+
+.link a{
+    color: white;
+}
+
+.items{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+    align-items: center;
+    background-color: black;
+}
+
+/* hover de links*/
+.link:hover{
+    transform: scale(1.2);
+}
+
+/* 
+******************************************************************************************
+INDEX.HTML
+******************************************************************************************
+*/
+
+/* MAIN */
+
+.index-body{
+    background-image: url(images/fondo1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.index-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.quienessomos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    position: absolute;
+    top: 90px;
+    margin: 10px;
+    right: 5%;
+    text-align: center;
+    background-color: rgb(44, 44, 44);
+    border-radius: 5px;
+}
+
+.parrafos p{
+    color: white;
+    font-size: x-large;
+}
+
+h1{
+    color: black;
+    text-align: center;
+    background-color: white;
+    width: 100%;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.text{
+    margin: 8%;
+    border: none;
+    border-bottom: 2px solid white;
+    background: none;
+    color: white;
+    width: 110%;
+}
+
+::placeholder{
+    color: white;
+}
+
+#consulta{
+    text-align: center;
+}
+
+#enviar{
+    width: 100%;
+    height: 40px;
+    margin: 8%;
+    background-color: yellow;
+    transition: all 0.5s;
+}
+
+#enviar:hover{
+    transform: scale(1.1);
+}
+
+/* FOOTER */
+
+#whatsapp:hover{
+    transform: scale(1.2);
+}
+
+/* 
+******************************************************************************************
+CONTACTO.HTML
+******************************************************************************************
+*/
+
+.contacto-body{
+    background-image: url(images/ciudad.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 5%;
+}
+
+main ul li{
+    margin: 15px;
+    list-style: none;
+    text-align: center;
+    width: 107%;
+    padding: 20px;
+    font-weight: bold;
+    font-family: Calibri;
+    background-color: white;
+}
+
+#contacto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 18px;
+}
+
+#phone-icon{
+    width: 28px;
+    position: relative;
+    top: 10px;
+    right: 12px;
+    background-color: none;
+}
+
+#email-icon{
+    width: 30px;
+    position: relative;
+    top: 10px;
+    right: 12px;
+    background-color: none;
+}
+
+/* 
+******************************************************************************************
+PRODUCTOS.HTML
+******************************************************************************************
+*/
+
+.productos-body{
+    background-image: url(./images/fondo1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+/* TEXTO */
+
+#detalles{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.titulo{
+    margin-right: 130px;
+    margin-left: 120px;
+    font-size: 20px;
+}
+
+p{
+    color:white ;
+}
+
+/* 
+******************************************************************************************
+SERVICIOS.HTML
+******************************************************************************************
+*/
+
+.servicios-body{
+    background-image: url(./images/fondo2.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.servicios{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    position: absolute;
+    top: 15%;
+    
+}
+
+.accordion{
+    text-align: center;
+    width: 100%;
+}
+
+.accordion-button{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+/* ¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡PELIGRO!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+
+@media (max-width: 479px){
+
+    .carousel{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 30%;
+    }
+
+    #whatsapp{
+        width: 10%;
+        position: fixed;
+        bottom: 0;
+        left: 10px;
+        transition: all 0.5s;
+    }
+
+        /* FORMULARIO DE CONTACTO */
+
+    .contactanos{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        background-color: rgb(44, 44, 44);
+        padding: 3%;
+        color: white;
+        width: 45%;
+    
+        /* provisorio*/
+        position: fixed;
+        top: 17%;
+        left: 15%;
+    }
+
+}
+
+@media (min-width: 480px) and (max-width: 719px){
+
+    .carousel{
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 25%;
+    }
+
+    #whatsapp{
+        width: 10%;
+        position: fixed;
+        bottom: 10px;
+        left: 10px;
+        transition: all 0.5s;
+    }
+
+        /* FORMULARIO DE CONTACTO */
+
+    .contactanos{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        background-color: rgb(44, 44, 44);
+        padding: 3%;
+        color: white;
+        width: 45%;
+    
+        /* provisorio*/
+        position: fixed;
+        top: 17%;
+        left: 15%;
+    }
+
+}
+
+/* PANTALLAS INTERMEDIAS */
+
+@media (min-width: 720px) and (max-width: 1023px){
+
+    .carousel{
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #whatsapp{
+        width: 6%;
+        position: fixed;
+        bottom: 10px;
+        left: 10px;
+        transition: all 0.5s;
+    }
+
+        /* FORMULARIO DE CONTACTO */
+
+.contactanos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: rgb(44, 44, 44);
+    padding: 3%;
+    color: white;
+    width: 28%;
+
+    /* provisorio*/
+    position: fixed;
+    top: 15%;
+    left: 15%;
+}
+
+}
+
+/* PANTALLAS GRANDES */
+
+@media (min-width: 1024px) and (max-width: 1279px){
+
+    .carousel{
+        width: 55%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #whatsapp{
+        width: 5%;
+        position: fixed;
+        bottom: 10px;
+        left: 10px;
+        transition: all 0.5s;
+    }
+
+    /* FORMULARIO DE CONTACTO */
+
+.contactanos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: rgb(44, 44, 44);
+    padding: 3%;
+    color: white;
+    width: 25%;
+
+    /* provisorio*/
+    position: fixed;
+    top: 17%;
+    left: 15%;
+}
+
+}
+
+/* PANTALLAS EXTRA-LARGE */
+
+@media (min-width: 1280px){
+    
+    .carousel{
+        width: 57%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #whatsapp{
+        width: 5%;
+        position: fixed;
+        bottom: 10px;
+        left: 10px;
+        transition: all 0.5s;
+    }
+
+    /* FORMULARIO DE CONTACTO */
+
+    .contactanos{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        background-color: rgb(44, 44, 44);
+        padding: 3%;
+        color: white;
+        width: 25%;
+
+        /* provisorio*/
+        position: fixed;
+        top: 15%;
+        left: 12%;
+    }
+
+}
+
+/*  fin prueba media query */
+
+
+/* CAROUSEL */
+
+.carousel{
+    background: none;
+}
+
+.carousel h5{
+    color: black;
+    font-size: xx-large;
+    font-weight: bold;
+    border-bottom: 2px solid black;
+}
